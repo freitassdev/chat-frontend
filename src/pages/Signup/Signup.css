@@ -1,0 +1,15 @@
+.signup-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    background-image: url(/images/background.png);
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(/public/images/bubbles.svg);
+    background-repeat: repeat;
+    background-size: 200px; */
+
+}

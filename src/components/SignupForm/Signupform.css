@@ -1,0 +1,115 @@
+
+.signup-card {
+    width: 350px;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    border-radius: var(--border-radius);
+    border: var(--border-light);
+    background-color: rgba(255,255,255,0.002);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    margin: 0 auto;
+}
+.signup-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 20px 10px 20px;
+}
+.signup-title h1 {
+    color: var(--color-title)
+}
+
+.signup-google-button {
+    border: var(--border-light);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: var(--border-radius);
+    max-height: 44px;
+}
+
+.signup-google-button img {
+    width: 17px;
+    height: 17px;
+}
+
+.signup-google-button p {
+    color: var(--text-color-dark)
+}
+
+.signup-or-text {
+    color: var(--text-color-dark);
+    line-height: 5px;
+}
+
+.signup-email {
+    border: 2px solid #eeb8fa;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: var(--border-radius)
+}
+
+
+.signup-inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.forgot-pass {
+    margin-right: auto;
+}
+
+.forgot-pass:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup-button {
+    border: var(--border-light);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: var(--border-radius);
+    max-height: 44px;
+    background-color: var(--color-a);
+    color: var(--text-color-dark)
+}
+
+.create-account:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.p-overlaypanel .p-overlaypanel-content {
+    padding: 1rem;
+    font-size: 13px !important;
+}
+
+.p-overlaypanel {
+    background-color: var(--color-a) !important;
+    border: 2px solid var(--color-b) !important;
+}
+.p-overlaypanel::before {
+    border-bottom-color: var(--color-b) !important;
+}
+.p-overlaypanel::after {
+    border-bottom-color: var(--color-a) !important;
+}

@@ -1,0 +1,69 @@
+nav {
+    background-color: var(--surface-a) !important;
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    min-height: 4rem !important;
+    max-height: 4rem !important;
+}
+
+.nav-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-image {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.nav-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-name {
+    margin-left: 12px;
+}
+
+.nav-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+.nav-name .user-name {
+    font-size: 15px;
+    color: #fff;
+}	
+.nav-name .message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -8px;
+    font-size: 13px;
+    color: #8696a0;
+    gap: 3px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 20px 0 16px;
+    gap: 20px;
+}
+
+.nav-option i {
+    font-size: 16px;
+}

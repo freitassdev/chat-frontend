@@ -1,0 +1,100 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 500px;
+    background-color: var(--surface-c);
+    border-right: 2px solid #232e3e;
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    gap: 1r; 
+    background-color: var(--surface-a);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-content {
+    
+}
+
+.profile-image {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.profile-image img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.sidebar-header-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-left: auto;
+    margin-right: 16px;
+}
+.sidebar-header-icon {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-header-icon i {
+    font-size: 20px;
+    color: #babfc0;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #232e3e;
+    border-bottom: 1px solid #232e3e;
+    height: 4.5rem;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.sidebar-item .name-and-message {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+}
+.sidebar-item .name-and-message .user-name {
+    font-size: 15px;
+    color: #fff;
+}	
+.sidebar-item .name-and-message .last-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -7px;
+    font-size: 13px;
+    color: #8696a0;
+    gap: 3px;
+}
+
+.user-image img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}   
+
+.sidebar-item .last-message-day {
+    margin-left: auto;
+    font-size: 12px;
+    margin-top: -30px;
+    color: #8696a0;
+}
+
+.sidebar-item .last-message-icon {
+    width: 17px;
+    height: 17px;
+}

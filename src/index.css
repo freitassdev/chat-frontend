@@ -1,0 +1,93 @@
+:root {
+  width: 100vw;
+  height: 100vh;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--surface-b);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --surface-c-transparent: rgba(24, 31, 46, 0.4 );
+  --color-a: #f4bcfb;
+  --color-b: #b57ac3;
+  --color-a-dark: #e6b1ed;
+  --color-title: #e59bf7;
+  --color-background: #f8e0fb;
+
+  --border-app: 2px solid var(--surface-a);
+
+  --text-color-white: #fdebff;
+  --text-color-dark: #4542a9;
+  --border: 1px solid var(--surface-a);
+  --border-light: 2px solid #eeb8fa;
+  --border-dark: 2px solid #e5b0ec;
+}
+
+* {
+  box-sizing: border-box  
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.text-small {
+  font-size: 14px;
+}
+
+.text-light {
+  color: var(--text-color-white);
+}
+.input-text {
+  position: relative;
+  display: inline-block;
+  width: 100% !important;
+}
+
+.input-text input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: var(--border-light);
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: transparent;
+  outline: none;
+  transition: 0.2s;
+  color: var(--text-color-dark)
+}
+
+.input-text label {
+  position: absolute;
+  margin-top: -20px;
+  left: 10px;
+  color: var(--text-color-dark);
+  pointer-events: none;
+  transition: 0.3s;
+  mix-blend-mode: difference;
+}
+
+.input-text input:focus {
+  border-color: var(--color-b);
+}
+
+.input-text input:focus + label,
+.input-text input:valid + label {
+  font-size: 12px;
+  top: 0;
+  color:  var(--text-color-dark);
+}
+
+.text-red {
+  color: #ff2c2c;
+}
+
+.text-green {
+  color: #4142a2;
+}
