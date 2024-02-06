@@ -31,7 +31,7 @@ class MessageService {
         const messageContainer = document.getElementsByClassName('messages-container')[0];
         if(messageContainer) messageContainer.innerHTML += messageHtml;
 
-        console.log(messageHtml)
+        console.log(messageHtml, user, id)
 
 
         // create message

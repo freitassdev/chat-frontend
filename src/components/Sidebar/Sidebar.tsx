@@ -4,7 +4,7 @@ import images from '../../assets';
 import { Tooltip } from 'primereact/tooltip';
 
 const Sidebar: React.FC = () => {
-    const check = images.check;
+    // const check = images.check;
     const doubleCheck = images.doubleCheck;
     const userProfile = images.userSvg;
     return (
