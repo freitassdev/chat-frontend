@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root {
   width: 100vw;
   height: 100vh;
@@ -27,6 +29,9 @@
   --border: 1px solid var(--surface-a);
   --border-light: 2px solid #eeb8fa;
   --border-dark: 2px solid #e5b0ec;
+  --surface-c: #181f2e !important;
+
+  --message-color: #44a9e2;
 }
 
 * {

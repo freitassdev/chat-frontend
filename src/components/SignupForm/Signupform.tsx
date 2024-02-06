@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { OverlayPanel } from 'primereact/overlaypanel';
+import AuthService from '../../services/auth.service';
 import './Signupform.css'
 
 const SignupForm: React.FC = () => {
@@ -9,7 +10,8 @@ const SignupForm: React.FC = () => {
   const [hasNumbers, setHasNumbers] = useState<boolean>(false);
   const [hasLeters, setHasLeters] = useState<boolean>(false);
   const [hasSpecialChars, setHasSpecialChars] = useState<boolean>(false);
-
+  
+  const authService = new AuthService();
   const op = useRef(null!) as React.RefObject<OverlayPanel>;
   const changeEmailInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newEmail = e.target.value;
@@ -35,6 +37,13 @@ const SignupForm: React.FC = () => {
       op.current.toggle(e)
     }
   }
+
+  const signupClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const nickname: string = email.split('@')[0];
+    authService.signup(email, pass, nickname)
+  }
+
   return (
     <>
       <div className="signup-card">
@@ -67,7 +76,7 @@ const SignupForm: React.FC = () => {
           <p className="forgot-pass text-small text-light">
             Esqueceu sua senha?
           </p>
-          <div className="signup-button">
+          <div className="signup-button" onClick={(e) => signupClick(e)}>
             <p>Entrar</p>
           </div>
           <p className="create-account text-small text-light">
