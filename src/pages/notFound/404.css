@@ -1,0 +1,27 @@
+.nf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 120px 0;
+}
+.nf-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.nf-title span {
+    color: var(--message-color);
+}
+
+.nf-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+

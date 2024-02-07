@@ -96,3 +96,8 @@ body {
 .text-green {
   color: #4142a2;
 }
+
+.p-button {
+  background-color: var(--message-color) !important;
+  border: 2px solid var(--message-color) !important;
+}
